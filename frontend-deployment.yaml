@@ -15,6 +15,6 @@ spec:
         app: frontend
     spec:
       containers:
-      - image: kharatramesh/vadapavimages:itc-angular-lb
+      - image: harshit281/frontendproject_1:frontend1-image
         name: frontend
         

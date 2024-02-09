@@ -1,0 +1,37 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: app1
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: crictrackblogs.itcblogs.xyz
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: frontend
+            port:
+              number: 80
+  - host: loginharshit.itcblogs.xyz
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: login
+            port:
+              number: 8083
+  - host: dashboardharshit.itcblogs.xyz
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: dashboard
+            port:
+              number: 8085

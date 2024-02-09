@@ -1,4 +1,5 @@
 apiVersion: apps/v1
+
 kind: Deployment
 metadata:
   labels:
@@ -15,6 +16,6 @@ spec:
         app: mongo-db1
     spec:
       containers:
-      - image: kharatramesh/vadapavimages:itc-mongo-database
+      - image: mongo:latest
         name: mongo-database
 

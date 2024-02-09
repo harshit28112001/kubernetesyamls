@@ -3,7 +3,7 @@ kind: Service
 metadata:
   labels:
     app: mysql-db
-  name: my-sql-service
+  name: mysql-service
 spec:
   ports:
   - port: 3306

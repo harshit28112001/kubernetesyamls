@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+iapiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
@@ -15,7 +15,7 @@ spec:
         app: login
     spec:
       containers:
-      - image: kharatramesh/vadapavimages:itc-login
+      - image: harshit281/frontendproject_1:login1-image
         name: login
         env:
         - name: "spring.datasource.username"

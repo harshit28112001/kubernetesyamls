@@ -15,6 +15,6 @@ spec:
         app: dashboard
     spec:
       containers:
-      - image: kharatramesh/vadapavimages:itc-dashboard
+      - image: harshit281/frontendproject_1:dashboard1-image
         name: dashboard
 
